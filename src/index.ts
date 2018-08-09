@@ -1,4 +1,4 @@
-export default function init(screenWidthByDesign: number = 1920, screenRatioByDesign: number = 16 / 9) {
+export function init(screenRatioByDesign: number = 16 / 9) {
   let docEle = document.documentElement
 
   function setHtmlFontSize() {

@@ -2,12 +2,18 @@
   "name": "lib-flexible-for-dashboard",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc index.ts --module umd --declaration"
+    "build": "rm -rf dist/*; webpack"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "njleonzhang",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^4.4.2",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
 }
