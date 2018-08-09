@@ -6,7 +6,8 @@
   "types": "dist/types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist/*; webpack"
+    "build": "rm -rf dist/*; webpack",
+    "release": "./release.sh"
   },
   "author": "njleonzhang",
   "license": "ISC",
