@@ -1,11 +1,12 @@
 {
   "name": "lib-flexible-for-dashboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc index.ts --module umd"
+    "build": "tsc index.ts --module umd --declaration"
   },
   "author": "",
   "license": "ISC"
