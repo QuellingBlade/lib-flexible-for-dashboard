@@ -2,12 +2,14 @@ export default function init(screenWidthByDesign: number = 1920, screenRatioByDe
   let docEle = document.documentElement
 
   function setHtmlFontSize() {
-      var screenRatio = docEle.clientWidth / docEle.clientHeight;
-      var fontSize = (screenRatio > screenRatioByDesign
-          ? (screenRatioByDesign / screenRatio)
-          : 1) * docEle.clientWidth / 10;
+    var screenRatio = docEle.clientWidth / docEle.clientHeight;
+    var fontSize = (
+      screenRatio > screenRatioByDesign
+        ? (screenRatioByDesign / screenRatio)
+        : 1
+    ) * docEle.clientWidth / 10;
 
-      docEle.style.fontSize = fontSize.toFixed(3) + "px";
+    docEle.style.fontSize = fontSize.toFixed(3) + "px";
   }
 
   setHtmlFontSize()
